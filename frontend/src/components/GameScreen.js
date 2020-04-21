@@ -1,20 +1,14 @@
 import React, { Component } from 'react';
 
+import Player from './Player';
+
 import '../styles/GameScreen.css';
 
 class GameScreen extends Component {
-	start = gameLoop => {
-		this.interval = setInterval(gameLoop, 20);
-	}
-
-	stop = () => {
-		clearInterval(this.interval)
-	}
-
 	render() {
 		return (
 			<div className="GameScreen">
-				<canvas />
+				<Player />
 			</div>
 		);
 	}
